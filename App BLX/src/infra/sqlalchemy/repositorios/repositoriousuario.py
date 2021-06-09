@@ -22,3 +22,8 @@ class RepositorioUsuario():
         stmt = select(models.Usuarios)
         usuarios = self.db.execute(stmt).scalars().all()
         return usuarios
+
+
+    def obter_por_telefone(self, telefone):
+        query = select(models.Usuarios).where(models.Usuarios.telefone == telefone)
+        return self.db.execute(query).scalars().first()

@@ -26,21 +26,29 @@ class Usuario(BaseModel):
 class UsuarioSimples(BaseModel):
     id: Optional[int] = None
     nome: str
-    senha: str
     telefone: str
 
     class Config:
         orm_mode = True
         
 
+class LoginData(BaseModel):
+    senha: str
+    telefone: str
+
+
+class LoginSucesso(BaseModel):
+    usuario: UsuarioSimples
+    access_token: str
+
+        
 class Produto(BaseModel):
     id: Optional[int] = None
     nome: str
     detalhes: str
     preco: float
     disponivel: bool = False
-    usuario_id: Optional[int]
-    usuario: Optional[UsuarioSimples]
+    usuario_id: Optional[LoginData]
 
     class Config:
         orm_mode = True
