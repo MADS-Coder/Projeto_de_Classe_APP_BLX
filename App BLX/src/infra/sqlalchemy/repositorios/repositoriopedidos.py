@@ -1,5 +1,4 @@
 from sqlalchemy.orm import Session
-from typing import List
 from sqlalchemy import select
 from src.schemas import schemas
 from src.infra.sqlalchemy.models import models
@@ -32,7 +31,7 @@ class RepositorioPedidos():
         return pedidos
 
 
-    def listar_meus_pedidos_por_usuario_id(self, user_id: int):     
+    def listar_meus_pedidos_por_usuario_id(self, user_id: int):  
         consulta_usuario = select(models.Pedidos).where(models.Pedidos.usuario_id == user_id)
         resultado = self.db.execute(consulta_usuario).scalars().all()
         return resultado

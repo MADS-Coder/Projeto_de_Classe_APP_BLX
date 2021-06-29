@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c9ca3891-743e-42b0-bd19-568f18e4ea2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app_blx.db" beforeDir="false" afterPath="$PROJECT_DIR$/app_blx.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infra/sqlalchemy/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infra/sqlalchemy/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infra/sqlalchemy/providers/hash_provider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infra/sqlalchemy/providers/token_provider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infra/sqlalchemy/repositorios/repositoriopedidos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infra/sqlalchemy/repositorios/repositoriopedidos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infra/sqlalchemy/repositorios/repositoriosprodutos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infra/sqlalchemy/repositorios/repositoriosprodutos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infra/sqlalchemy/repositorios/repositoriousuario.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infra/sqlalchemy/repositorios/repositoriousuario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/rotas_pedidos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/rotas_pedidos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/rotas_produtos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/rotas_produtos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/rotas_usuarios.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1uPYerOYXKxers8fZ2iG98CDcGx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9ca3891-743e-42b0-bd19-568f18e4ea2c" name="Default Changelist" comment="" />
+      <created>1624568796181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624568796181</updated>
+    </task>
+    <servers />
+  </component>
+</project>

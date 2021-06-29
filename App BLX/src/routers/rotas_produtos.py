@@ -9,17 +9,33 @@ from src.routers.auth_utils import obter_usuario_logado
 router = APIRouter()
 
 #Cadastrar Produtos.
-@router.post('/produtos', status_code=status.HTTP_201_CREATED, response_model=Produto)
+@router.post('/produtos', status_code=status.HTTP_201_CREATED, response_model=ProdutoSimples)
 def criar_produto(produto: Produto, usuario: Usuario = Depends(obter_usuario_logado), db: Session = Depends(get_db)):
+    produto.usuario_id = usuario.id
     produto_criado = RepositorioProduto(db).criar(produto)
     return produto_criado
 
+
+#Listar Produtos.
+@router.get('/produtos', response_model=List[ProdutoSimples])
+def listar_produtos(db: Session = Depends(get_db)):
+    produtos = RepositorioProduto(db).listar()
+    return produtos
 
 #Listar Produtos.
 @router.get('/produtos', response_model=List[Produto])
 def listar_produtos(db: Session = Depends(get_db)):
     produtos = RepositorioProduto(db).listar()
     return produtos
+
+#Listar Produtos por ID.
+@router.get('/produtos/{id}', response_model=Produto)
+def exibir_produto(id: int, session: Session = Depends(get_db)):
+    produto_localizado = RepositorioProduto(session).buscarPorId(id)
+    if not produto_localizado:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail=f'Não há um produto com o id = {id}')
+    return produto_localizado
 
 
 #Remove o produto pelo id.

@@ -6,7 +6,8 @@ from src.middlewares.timer import SimpleASGIMiddleware
 
 app = FastAPI()
 
-origins = ['http://localhost:8000']
+origins = ['http://localhost:3000',
+            'https://myapp.vercel.com']
 
 #CORS
 app.add_middleware(

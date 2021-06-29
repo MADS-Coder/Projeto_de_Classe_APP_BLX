@@ -1,4 +1,3 @@
-from starlette import responses
 from starlette.requests import Request
 from starlette.types import ASGIApp, Scope, Receive, Send
 

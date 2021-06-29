@@ -41,14 +41,14 @@ class LoginSucesso(BaseModel):
     usuario: UsuarioSimples
     access_token: str
 
-        
+
 class Produto(BaseModel):
     id: Optional[int] = None
     nome: str
     detalhes: str
     preco: float
     disponivel: bool = False
-    usuario_id: Optional[LoginData]
+    usuario_id: Optional[int]
 
     class Config:
         orm_mode = True
@@ -77,6 +77,7 @@ class PedidoSimples(BaseModel):
     local_de_entrega: str
     observacoes: Optional[str] = 'Sem observações'
     produto: Optional[ProdutoSimples]
+
 
     class Config:
         orm_mode = True

@@ -12,7 +12,7 @@ class Usuarios(Base):
     telefone = Column(String)
 
     produtos = relationship('Produtos', back_populates='usuario')    #Produtos que o usuario vende.
-    pedidos = relationship('Pedidos', back_populates='usuario')      #Pedidos que o usuario compra.
+    pedidos = relationship('Pedidos', back_populates='usuario')      #Produtos que o usuario compra.
 
 
 class Produtos(Base):
@@ -23,7 +23,6 @@ class Produtos(Base):
     detalhes = Column(String)
     preco = Column(Float)
     disponivel = Column(Boolean)
-    tamanhos = Column(String)
     usuario_id = Column(Integer, ForeignKey('usuario.id', name='fk_usuario'))
 
     usuario = relationship('Usuarios', back_populates='produtos')

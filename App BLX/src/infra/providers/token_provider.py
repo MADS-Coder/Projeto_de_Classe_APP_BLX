@@ -5,7 +5,7 @@ from jose import jwt
 
 
 #CONFIG
-SECRET_KEY = '698dc19d489c4e4db73e28a713eab07b'
+SECRET_KEY = 'caa9c8f8620cbb30679026bb6427e11f'
 ALGORITHM = 'HS256'
 #Validade do token é 3000 minutos.
 EXPIRES_IN_MIN = 3000             
@@ -14,7 +14,7 @@ EXPIRES_IN_MIN = 3000
 
 #CRIA E RETORNA O TOKEN
 '''Tem que enviar um dicionário que será uma carga de dados que ficará criptografada
-dentro do token, essa carga vai criptografa para o usuárioe vai guardar la.'''
+dentro do token, essa carga vai criptografa para o usuário e vai guardar la.'''
 def criar_access_token(data: dict):
     #Faz uma copia do dicionario (data)
     dados = data.copy()
